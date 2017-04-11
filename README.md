@@ -5,7 +5,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/185vuewfhtkqfed6/branch/master?svg=true)](https://ci.appveyor.com/project/OnceMore2020/quickcite/branch/master)
 [![Build Status](https://travis-ci.org/OnceMore2020/QuickCite.svg?branch=master)](https://travis-ci.org/OnceMore2020/QuickCite)
 
-![](https://omjqdrs7d.qnssl.com/github/quickcite/quickcite.png)
+![](http://wx3.sinaimg.cn/large/9bdff7acgy1fej0dxzq2rj20mj0gzgoy.jpg)
 
 ## Releases
 
