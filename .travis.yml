@@ -1,0 +1,42 @@
+dist: trusty
+sudo: false
+
+language: node_js
+
+matrix:
+  include:
+  - os: osx
+    node_js: 7
+  - os: linux
+    node_js: 7
+    env: CC=clang CXX=clang++ npm_config_clang=1
+    compiler: clang
+
+cache:
+  yarn: true
+
+addons:
+  apt:
+    packages:
+    - libgnome-keyring-dev
+    - icnsutils
+    - graphicsmagick
+    - xz-utils
+    - rpm
+    - bsdtar
+
+before_install:
+- curl -o- -L https://yarnpkg.com/install.sh | bash
+- export PATH="$HOME/.yarn/bin:$PATH"
+- git fetch --tags
+
+install:
+- yarn
+- yarn add electron-builder@next --dev
+
+script:
+- yarn run build
+
+branches:
+  only:
+  - master

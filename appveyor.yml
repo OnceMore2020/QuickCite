@@ -1,0 +1,32 @@
+version: 0.0.1{build}
+
+branches:
+  only:
+  - master
+
+platform:
+  - x64
+
+environment:
+  GH_TOKEN:
+    secure: kANgXWGJvXYtK1ar86zwgOBmd8haOYQP+JwWeAQ+Usmdb32u6Impiy5WwMfPnwjr
+
+cache:
+  - '%LOCALAPPDATA%\Yarn'
+
+init:
+  - git config --global core.autocrlf input
+
+install:
+  - ps: Install-Product node 7
+  - yarn install
+
+build_script:
+  - node -v
+  - yarn run build
+
+test: off
+
+artifacts:
+- path: dist\*.exe
+  name: win-installer
