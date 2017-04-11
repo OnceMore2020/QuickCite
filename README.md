@@ -2,10 +2,12 @@
 
 > Searching and referencing academic citations faster and easier than you think!
 
-[![Build status](https://ci.appveyor.com/api/projects/status/5wpr66kf09v0j0pn?svg=true)](https://ci.appveyor.com/project/OnceMore2020/jiawis)
-[![Build Status](https://travis-ci.org/OnceMore2020/JiaWis.svg?branch=master)](https://travis-ci.org/OnceMore2020/JiaWis)
+[![Build status](https://ci.appveyor.com/api/projects/status/185vuewfhtkqfed6/branch/master?svg=true)](https://ci.appveyor.com/project/OnceMore2020/quickcite/branch/master)
+[![Build Status](https://travis-ci.org/OnceMore2020/QuickCite.svg?branch=master)](https://travis-ci.org/OnceMore2020/QuickCite)
 
 ## Releases
+
+Check [QuickCite-Releases](https://github.com/OnceMore2020/QuickCite/releases) for latest builds.
 
 ## Hack The Code
 

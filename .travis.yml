@@ -1,8 +1,6 @@
 dist: trusty
 sudo: false
-
 language: node_js
-
 matrix:
   include:
   - os: osx
@@ -11,10 +9,8 @@ matrix:
     node_js: 7
     env: CC=clang CXX=clang++ npm_config_clang=1
     compiler: clang
-
 cache:
   yarn: true
-
 addons:
   apt:
     packages:
@@ -24,19 +20,17 @@ addons:
     - xz-utils
     - rpm
     - bsdtar
-
 before_install:
+- openssl aes-256-cbc -K $encrypted_b7c2d9d312a3_key -iv $encrypted_b7c2d9d312a3_iv
+  -in id_rsa.enc -out ~/.ssh/id_rsa -d
 - curl -o- -L https://yarnpkg.com/install.sh | bash
 - export PATH="$HOME/.yarn/bin:$PATH"
 - git fetch --tags
-
 install:
 - yarn
 - yarn add electron-builder@next --dev
-
 script:
 - yarn run build
-
 branches:
   only:
   - master
